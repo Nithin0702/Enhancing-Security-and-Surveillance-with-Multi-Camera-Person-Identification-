@@ -1,0 +1,1150 @@
+{
+    "metadata": {
+        "streamsync_version": "0.5.0"
+    },
+    "components": {
+        "root": {
+            "id": "root",
+            "type": "root",
+            "content": {
+                "appName": "My App"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "c0f99a9e-5004-4e75-a6c6-36f17490b134": {
+            "id": "c0f99a9e-5004-4e75-a6c6-36f17490b134",
+            "type": "page",
+            "content": {
+                "pageMode": "wide",
+                "emptinessColor": "#e9eef1",
+                "key": "dashboard"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "root",
+            "handlers": {},
+            "visible": true
+        },
+        "bebc5fe9-63a7-46a7-b0fa-62303555cfaf": {
+            "id": "bebc5fe9-63a7-46a7-b0fa-62303555cfaf",
+            "type": "header",
+            "content": {
+                "text": "@{my_app.title}",
+                "accentColor": "#D00846",
+                "cssClasses": "header-style"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "c0f99a9e-5004-4e75-a6c6-36f17490b134",
+            "handlers": {},
+            "visible": true
+        },
+        "x05zenhpqknugcyb": {
+            "id": "x05zenhpqknugcyb",
+            "type": "webcamcapture",
+            "content": {
+                "refreshRate": "200"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "vdj0l1u0uku3u28y",
+            "handlers": {
+                "ss-webcam": "process_webcam_frame"
+            },
+            "visible": true
+        },
+        "ssqtwwddi3qyj35w": {
+            "id": "ssqtwwddi3qyj35w",
+            "type": "image",
+            "content": {
+                "src": "@{webcamfeed}",
+                "caption": "Image Caption"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "c9xokrgnuvtrfcq2",
+            "handlers": {},
+            "visible": true
+        },
+        "80dunb30q26twz8d": {
+            "id": "80dunb30q26twz8d",
+            "type": "button",
+            "content": {
+                "text": "Settings",
+                "icon": "settings-line"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "bebc5fe9-63a7-46a7-b0fa-62303555cfaf",
+            "handlers": {
+                "ss-click": "go_to_settings"
+            },
+            "visible": true
+        },
+        "7493paazmkixjczx": {
+            "id": "7493paazmkixjczx",
+            "type": "page",
+            "content": {
+                "pageMode": "wide",
+                "key": "settings"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "root",
+            "visible": true
+        },
+        "75w05vm98hl3en1g": {
+            "id": "75w05vm98hl3en1g",
+            "type": "header",
+            "content": {
+                "text": "Settings",
+                "accentColor": "#D00846",
+                "emptinessColor": "#ffffff",
+                "cssClasses": "header-style"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "7493paazmkixjczx",
+            "handlers": {},
+            "visible": true
+        },
+        "hpdyvw4gkfb8g0wt": {
+            "id": "hpdyvw4gkfb8g0wt",
+            "type": "button",
+            "content": {
+                "text": "Dashboard",
+                "icon": "dashboard-horizontal-line"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "75w05vm98hl3en1g",
+            "handlers": {
+                "ss-click": "go_to_dashboard"
+            },
+            "visible": true
+        },
+        "tvil2fqvagliblqv": {
+            "id": "tvil2fqvagliblqv",
+            "type": "tabs",
+            "content": {
+                "accentColor": "#D00846"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "c0f99a9e-5004-4e75-a6c6-36f17490b134",
+            "handlers": {},
+            "visible": true
+        },
+        "wfdv5czxkpjs2g8h": {
+            "id": "wfdv5czxkpjs2g8h",
+            "type": "tab",
+            "content": {
+                "name": "surveillance"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "tvil2fqvagliblqv",
+            "handlers": {},
+            "visible": true
+        },
+        "nzj6rcr5u0z0pvt7": {
+            "id": "nzj6rcr5u0z0pvt7",
+            "type": "tab",
+            "content": {
+                "name": "Web cam tracking"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "tvil2fqvagliblqv",
+            "handlers": {},
+            "visible": true
+        },
+        "p872cuk6wu3ptutu": {
+            "id": "p872cuk6wu3ptutu",
+            "type": "tab",
+            "content": {
+                "name": "Face id registration"
+            },
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "tvil2fqvagliblqv",
+            "handlers": {},
+            "visible": true
+        },
+        "bqa7lcvuypgs105z": {
+            "id": "bqa7lcvuypgs105z",
+            "type": "tab",
+            "content": {
+                "name": "Video input"
+            },
+            "isCodeManaged": false,
+            "position": 3,
+            "parentId": "tvil2fqvagliblqv",
+            "handlers": {},
+            "visible": true
+        },
+        "ib6n2bub0yr4vhq1": {
+            "id": "ib6n2bub0yr4vhq1",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "nzj6rcr5u0z0pvt7",
+            "handlers": {},
+            "visible": true
+        },
+        "vdj0l1u0uku3u28y": {
+            "id": "vdj0l1u0uku3u28y",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "ib6n2bub0yr4vhq1",
+            "handlers": {},
+            "visible": true
+        },
+        "c9xokrgnuvtrfcq2": {
+            "id": "c9xokrgnuvtrfcq2",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "ib6n2bub0yr4vhq1",
+            "handlers": {},
+            "visible": true
+        },
+        "ugcng80gq1bne9hv": {
+            "id": "ugcng80gq1bne9hv",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "bqa7lcvuypgs105z",
+            "handlers": {},
+            "visible": true
+        },
+        "ykialtjg75sog0m8": {
+            "id": "ykialtjg75sog0m8",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "ugcng80gq1bne9hv",
+            "handlers": {},
+            "visible": true
+        },
+        "ivx8uwakdseg6h6x": {
+            "id": "ivx8uwakdseg6h6x",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "ugcng80gq1bne9hv",
+            "handlers": {},
+            "visible": true
+        },
+        "v4fbh73dyieagcdc": {
+            "id": "v4fbh73dyieagcdc",
+            "type": "fileinput",
+            "content": {
+                "label": "Upload video file",
+                "allowMultipleFiles": "no"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "ykialtjg75sog0m8",
+            "handlers": {
+                "ss-file-change": "upload_video_file"
+            },
+            "visible": true
+        },
+        "kstcsh58s5kv8j5c": {
+            "id": "kstcsh58s5kv8j5c",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "p872cuk6wu3ptutu",
+            "handlers": {},
+            "visible": true
+        },
+        "ht61k3d8pi8holuo": {
+            "id": "ht61k3d8pi8holuo",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "kstcsh58s5kv8j5c",
+            "handlers": {},
+            "visible": true
+        },
+        "mgwcy62wot27kjzo": {
+            "id": "mgwcy62wot27kjzo",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "kstcsh58s5kv8j5c",
+            "handlers": {},
+            "visible": true
+        },
+        "xnq26z2lxzccicr0": {
+            "id": "xnq26z2lxzccicr0",
+            "type": "webcamcapture",
+            "content": {
+                "refreshRate": "200"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "ht61k3d8pi8holuo",
+            "handlers": {
+                "ss-webcam": "face_capture"
+            }
+        },
+        "jo8td2kxr4p266x2": {
+            "id": "jo8td2kxr4p266x2",
+            "type": "textinput",
+            "content": {
+                "label": "",
+                "placeholder": "Enter  the name "
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "p872cuk6wu3ptutu",
+            "binding": {
+                "eventType": "ss-change",
+                "stateRef": "new_registration_name"
+            }
+        },
+        "2x2tk9yl38lvqoik": {
+            "id": "2x2tk9yl38lvqoik",
+            "type": "button",
+            "content": {
+                "text": "capture"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "mgwcy62wot27kjzo",
+            "handlers": {
+                "ss-click": "add_to_db"
+            },
+            "visible": true
+        },
+        "13d2veh5pqtc2r0g": {
+            "id": "13d2veh5pqtc2r0g",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "7493paazmkixjczx",
+            "handlers": {},
+            "visible": true
+        },
+        "yomygmv6roajk627": {
+            "id": "yomygmv6roajk627",
+            "type": "column",
+            "content": {
+                "width": "0.4",
+                "contentHAlign": "start",
+                "contentVAlign": "center"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "13d2veh5pqtc2r0g",
+            "handlers": {},
+            "visible": true
+        },
+        "w1tmq8v2aydjsunk": {
+            "id": "w1tmq8v2aydjsunk",
+            "type": "column",
+            "content": {
+                "width": "1",
+                "contentHAlign": "start",
+                "contentVAlign": "center"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "13d2veh5pqtc2r0g",
+            "handlers": {},
+            "visible": true
+        },
+        "xsohj47rir5xu2rp": {
+            "id": "xsohj47rir5xu2rp",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "13d2veh5pqtc2r0g",
+            "handlers": {},
+            "visible": true
+        },
+        "05ppny0paqkv345k": {
+            "id": "05ppny0paqkv345k",
+            "type": "heading",
+            "content": {
+                "text": "Select Yolo model",
+                "headingType": "h1",
+                "alignment": "center"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "yomygmv6roajk627",
+            "handlers": {},
+            "visible": true
+        },
+        "w7ar9p7jyafzcest": {
+            "id": "w7ar9p7jyafzcest",
+            "type": "dropdowninput",
+            "content": {
+                "label": "",
+                "options": "{\n  \"yolov8n\": \"YOLOv8 nano\",\n  \"yolov8s\": \"YOLOv8 small\",\n  \"yolov8m\": \"YOLOv8 medium\",\n  \"yolov8xl\": \"YOLOv8 extra large\"\n}",
+                "cssClasses": "dropdownstyle"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "w1tmq8v2aydjsunk",
+            "handlers": {
+                "ss-option-change": "select_yolo_model"
+            },
+            "visible": true
+        },
+        "31x859s1cz7qou35": {
+            "id": "31x859s1cz7qou35",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "7493paazmkixjczx",
+            "handlers": {},
+            "visible": true
+        },
+        "i2fzb22w97nbluyo": {
+            "id": "i2fzb22w97nbluyo",
+            "type": "column",
+            "content": {
+                "title": "",
+                "width": "0.4",
+                "contentHAlign": "start",
+                "contentVAlign": "center"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "31x859s1cz7qou35",
+            "handlers": {},
+            "visible": true
+        },
+        "i5i9hjpgwsq2ct44": {
+            "id": "i5i9hjpgwsq2ct44",
+            "type": "column",
+            "content": {
+                "width": "1",
+                "contentHAlign": "start",
+                "contentVAlign": "center"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "31x859s1cz7qou35",
+            "handlers": {},
+            "visible": true
+        },
+        "y1zkn4uiotrg81ng": {
+            "id": "y1zkn4uiotrg81ng",
+            "type": "column",
+            "content": {
+                "width": "1",
+                "contentHAlign": "start",
+                "contentVAlign": "center"
+            },
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "31x859s1cz7qou35",
+            "handlers": {},
+            "visible": true
+        },
+        "dfofaqyawbcucm6h": {
+            "id": "dfofaqyawbcucm6h",
+            "type": "heading",
+            "content": {
+                "text": "API End point",
+                "headingType": "h1"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "i2fzb22w97nbluyo",
+            "handlers": {},
+            "visible": true
+        },
+        "t0a6ikbqbrdoxv73": {
+            "id": "t0a6ikbqbrdoxv73",
+            "type": "textinput",
+            "content": {
+                "label": "",
+                "placeholder": "befault: http://localhost:5000",
+                "cssClasses": "api-input"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "i5i9hjpgwsq2ct44",
+            "handlers": {
+                "ss-change": "is_api_endpoint_up"
+            },
+            "visible": true
+        },
+        "crueypuog025im50": {
+            "id": "crueypuog025im50",
+            "type": "message",
+            "content": {
+                "message": ""
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "y1zkn4uiotrg81ng",
+            "handlers": {},
+            "visible": true
+        },
+        "pqtcll80i9gdgz5l": {
+            "id": "pqtcll80i9gdgz5l",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 3,
+            "parentId": "7493paazmkixjczx",
+            "handlers": {},
+            "visible": true
+        },
+        "yefmxdeep9uy3szb": {
+            "id": "yefmxdeep9uy3szb",
+            "type": "column",
+            "content": {
+                "width": "0.2",
+                "contentHAlign": "start",
+                "contentVAlign": "center"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "pqtcll80i9gdgz5l",
+            "handlers": {},
+            "visible": true
+        },
+        "1g1rshqbkjv0p2va": {
+            "id": "1g1rshqbkjv0p2va",
+            "type": "multiselectinput",
+            "content": {
+                "label": "",
+                "placeholder": "Default tracks all objects",
+                "accentColor": "#D00846",
+                "selectedColor": "#d008477c",
+                "options": "{\n\"person\": \"person\",\n\"bicycle\": \"bicycle\",\n\"car\": \"car\",\n\"motorbike\": \"motorbike\",\n\"aeroplane\": \"aeroplane\",\n\"bus\": \"bus\",\n\"train\": \"train\",\n\"truck\": \"truck\",\n\"boat\": \"boat\",\n\"traffic light\": \"traffic light\",\n\"fire hydrant\": \"fire hydrant\",\n\"stop sign\": \"stop sign\",\n\"parking meter\": \"parking meter\",\n\"bench\": \"bench\",\n\"bird\": \"bird\",\n\"cat\": \"cat\",\n\"dog\": \"dog\",\n\"horse\": \"horse\",\n\"sheep\": \"sheep\",\n\"cow\": \"cow\",\n\"elephant\": \"elephant\",\n\"bear\": \"bear\",\n\"zebra\": \"zebra\",\n\"giraffe\": \"giraffe\",\n\"backpack\": \"backpack\",\n\"umbrella\": \"umbrella\",\n\"handbag\": \"handbag\",\n\"tie\": \"tie\",\n\"suitcase\": \"suitcase\",\n\"frisbee\": \"frisbee\",\n\"skis\": \"skis\",\n\"snowboard\": \"snowboard\",\n\"sports ball\": \"sports ball\",\n\"kite\": \"kite\",\n\"baseball bat\": \"baseball bat\",\n\"baseball glove\": \"baseball glove\",\n\"skateboard\": \"skateboard\",\n\"surfboard\": \"surfboard\",\n\"tennis racket\": \"tennis racket\",\n\"bottle\": \"bottle\",\n\"wine glass\": \"wine glass\",\n\"cup\": \"cup\",\n\"fork\": \"fork\",\n\"knife\": \"knife\",\n\"spoon\": \"spoon\",\n\"bowl\": \"bowl\",\n\"banana\": \"banana\",\n\"apple\": \"apple\",\n\"sandwich\": \"sandwich\",\n\"orange\": \"orange\",\n\"broccoli\": \"broccoli\",\n\"carrot\": \"carrot\",\n\"hot dog\": \"hot dog\",\n\"pizza\": \"pizza\",\n\"donut\": \"donut\",\n\"cake\": \"cake\",\n\"chair\": \"chair\",\n\"sofa\": \"sofa\",\n\"pottedplant\": \"pottedplant\",\n\"bed\": \"bed\",\n\"diningtable\": \"diningtable\",\n\"toilet\": \"toilet\",\n\"tvmonitor\": \"tvmonitor\",\n\"laptop\": \"laptop\",\n\"mouse\": \"mouse\",\n\"remote\": \"remote\",\n\"keyboard\": \"keyboard\",\n\"cell phone\": \"cell phone\",\n\"microwave\": \"microwave\",\n\"oven\": \"oven\",\n\"toaster\": \"toaster\",\n\"sink\": \"sink\",\n\"refrigerator\": \"refrigerator\",\n\"book\": \"book\",\n\"clock\": \"clock\",\n\"vase\": \"vase\",\n\"scissors\": \"scissors\",\n\"teddy bear\": \"teddy bear\",\n\"hair drier\": \"hair drier\",\n\"toothbrush\": \"toothbrush\"\n}",
+                "cssClasses": "multi-select-style",
+                "separatorColor": "#d008477c"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "cimqu6sdx64u04dl",
+            "handlers": {
+                "ss-options-change": "get_objects_list"
+            },
+            "visible": true
+        },
+        "c4qg2srk7p5e2obp": {
+            "id": "c4qg2srk7p5e2obp",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 5,
+            "parentId": "7493paazmkixjczx",
+            "handlers": {},
+            "visible": true
+        },
+        "kmas84mu0kw1oiuo": {
+            "id": "kmas84mu0kw1oiuo",
+            "type": "column",
+            "content": {
+                "width": "1",
+                "isCollapsible": "",
+                "contentHAlign": "end",
+                "contentVAlign": "center"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "c4qg2srk7p5e2obp",
+            "handlers": {},
+            "visible": true
+        },
+        "40wl9u4lua9u2bsa": {
+            "id": "40wl9u4lua9u2bsa",
+            "type": "button",
+            "content": {
+                "text": "Sync Changes",
+                "isDisabled": "",
+                "buttonColor": "#D00846",
+                "buttonTextColor": "#ffffff",
+                "icon": "loop-right-line"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "kmas84mu0kw1oiuo",
+            "handlers": {
+                "ss-click": "sync_settings"
+            },
+            "visible": true
+        },
+        "rgx3urradw3nhnee": {
+            "id": "rgx3urradw3nhnee",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 4,
+            "parentId": "7493paazmkixjczx",
+            "handlers": {},
+            "visible": true
+        },
+        "w43u4b0pdoflazwq": {
+            "id": "w43u4b0pdoflazwq",
+            "type": "column",
+            "content": {
+                "width": "0.2",
+                "contentHAlign": "start",
+                "contentVAlign": "center"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "rgx3urradw3nhnee",
+            "handlers": {},
+            "visible": true
+        },
+        "8gy9ug4c2kz6d9tq": {
+            "id": "8gy9ug4c2kz6d9tq",
+            "type": "column",
+            "content": {
+                "width": "1",
+                "contentHAlign": "start",
+                "contentVAlign": "center"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "rgx3urradw3nhnee",
+            "handlers": {},
+            "visible": true
+        },
+        "2ggyv5kd9dc0tw7u": {
+            "id": "2ggyv5kd9dc0tw7u",
+            "type": "heading",
+            "content": {
+                "text": "Camara Sources",
+                "headingType": "h1",
+                "alignment": "left"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "w43u4b0pdoflazwq",
+            "handlers": {},
+            "visible": true
+        },
+        "g0mvxvgy2blw7jvn": {
+            "id": "g0mvxvgy2blw7jvn",
+            "type": "textareainput",
+            "content": {
+                "label": "Enter Sources, separated by comma",
+                "placeholder": "",
+                "rows": "5"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "8gy9ug4c2kz6d9tq",
+            "handlers": {},
+            "visible": true
+        },
+        "cimqu6sdx64u04dl": {
+            "id": "cimqu6sdx64u04dl",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "pqtcll80i9gdgz5l",
+            "handlers": {},
+            "visible": true
+        },
+        "6g9v2tkuhwh2q392": {
+            "id": "6g9v2tkuhwh2q392",
+            "type": "heading",
+            "content": {
+                "text": "Select Objects",
+                "headingType": "h1",
+                "alignment": "left"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "yefmxdeep9uy3szb",
+            "handlers": {},
+            "visible": true
+        },
+        "hrmts1pwykx3nkwx": {
+            "id": "hrmts1pwykx3nkwx",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "wfdv5czxkpjs2g8h",
+            "handlers": {},
+            "visible": true
+        },
+        "we34om2ekycr3kab": {
+            "id": "we34om2ekycr3kab",
+            "type": "horizontalstack",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "wfdv5czxkpjs2g8h",
+            "handlers": {},
+            "visible": true
+        },
+        "fooj5r4di268ppes": {
+            "id": "fooj5r4di268ppes",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "we34om2ekycr3kab",
+            "handlers": {},
+            "visible": true
+        },
+        "4u886uey28tfgovu": {
+            "id": "4u886uey28tfgovu",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "hrmts1pwykx3nkwx",
+            "handlers": {},
+            "visible": true
+        },
+        "ne620xnw9odnnz3d": {
+            "id": "ne620xnw9odnnz3d",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "hrmts1pwykx3nkwx",
+            "handlers": {},
+            "visible": true
+        },
+        "nlhzwpxp62eook1b": {
+            "id": "nlhzwpxp62eook1b",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "fooj5r4di268ppes",
+            "handlers": {},
+            "visible": true
+        },
+        "zqtml80x6p6k0hnd": {
+            "id": "zqtml80x6p6k0hnd",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "fooj5r4di268ppes",
+            "handlers": {},
+            "visible": true
+        },
+        "o2ynpxmfmkb4m30v": {
+            "id": "o2ynpxmfmkb4m30v",
+            "type": "switchinput",
+            "content": {
+                "label": "camera 1"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "4u886uey28tfgovu",
+            "handlers": {
+                "ss-toggle": "cam1_toggle"
+            },
+            "visible": true,
+            "binding": {
+                "eventType": "ss-toggle",
+                "stateRef": "cam1"
+            }
+        },
+        "wsl5udho6xo9553w": {
+            "id": "wsl5udho6xo9553w",
+            "type": "image",
+            "content": {
+                "caption": "Image Caption",
+                "src": "@{ipcamfeed1}"
+            },
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "4u886uey28tfgovu",
+            "handlers": {},
+            "visible": true
+        },
+        "a9jc220scu85mu02": {
+            "id": "a9jc220scu85mu02",
+            "type": "switchinput",
+            "content": {
+                "label": "camera 2",
+                "cssClasses": "cam2"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "ne620xnw9odnnz3d",
+            "handlers": {
+                "ss-toggle": "cam2_toggle"
+            },
+            "visible": true
+        },
+        "eyj81chl5eii28vx": {
+            "id": "eyj81chl5eii28vx",
+            "type": "switchinput",
+            "content": {
+                "label": "camera 3"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "nlhzwpxp62eook1b",
+            "handlers": {
+                "ss-toggle": "cam3_toggle"
+            },
+            "visible": true,
+            "binding": {
+                "eventType": "ss-toggle",
+                "stateRef": "cam3"
+            }
+        },
+        "0sducihhdyc4clab": {
+            "id": "0sducihhdyc4clab",
+            "type": "switchinput",
+            "content": {
+                "label": "camera 4"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "zqtml80x6p6k0hnd",
+            "handlers": {
+                "ss-toggle": "cam4_toggle"
+            },
+            "visible": true,
+            "binding": {
+                "eventType": "ss-toggle",
+                "stateRef": "cam4"
+            }
+        },
+        "ns6hmjad2su52xok": {
+            "id": "ns6hmjad2su52xok",
+            "type": "image",
+            "content": {
+                "caption": "Image Caption",
+                "src": "@{ipcamfeed2}"
+            },
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "ne620xnw9odnnz3d",
+            "handlers": {},
+            "visible": true
+        },
+        "i053sdbq0psts230": {
+            "id": "i053sdbq0psts230",
+            "type": "image",
+            "content": {
+                "caption": "Image Caption",
+                "src": "@{ipcamfeed3}"
+            },
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "nlhzwpxp62eook1b",
+            "handlers": {},
+            "visible": true
+        },
+        "ly782riy5rhowc08": {
+            "id": "ly782riy5rhowc08",
+            "type": "image",
+            "content": {
+                "caption": "Image Caption",
+                "src": "@{ipcamfeed4}"
+            },
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "zqtml80x6p6k0hnd",
+            "handlers": {},
+            "visible": true
+        },
+        "6b6c3bdmnmr25aco": {
+            "id": "6b6c3bdmnmr25aco",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "wfdv5czxkpjs2g8h",
+            "handlers": {},
+            "visible": true
+        },
+        "x8xnhfls9tvclj1o": {
+            "id": "x8xnhfls9tvclj1o",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "6b6c3bdmnmr25aco",
+            "handlers": {},
+            "visible": true
+        },
+        "9fkhuhngo3stuvvu": {
+            "id": "9fkhuhngo3stuvvu",
+            "type": "column",
+            "content": {
+                "width": "1"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "6b6c3bdmnmr25aco",
+            "handlers": {},
+            "visible": true
+        },
+        "zrd501qmytm2aqch": {
+            "id": "zrd501qmytm2aqch",
+            "type": "switchinput",
+            "content": {
+                "label": "camera 5"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "x8xnhfls9tvclj1o",
+            "handlers": {
+                "ss-toggle": "cam5_toggle"
+            },
+            "visible": true
+        },
+        "giwv63shlzobjl3o": {
+            "id": "giwv63shlzobjl3o",
+            "type": "switchinput",
+            "content": {
+                "label": "camera 6"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "9fkhuhngo3stuvvu",
+            "handlers": {
+                "ss-toggle": "cam6_toggle"
+            },
+            "visible": true
+        },
+        "wv0q5fxpge7in0i2": {
+            "id": "wv0q5fxpge7in0i2",
+            "type": "image",
+            "content": {
+                "src": "@{ipcamfeed6}",
+                "caption": "Image Caption"
+            },
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "9fkhuhngo3stuvvu",
+            "handlers": {},
+            "visible": true
+        },
+        "yvbtcthdu4soay6h": {
+            "id": "yvbtcthdu4soay6h",
+            "type": "image",
+            "content": {
+                "src": "@{ipcamfeed5}",
+                "caption": "Image Caption"
+            },
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "x8xnhfls9tvclj1o",
+            "handlers": {},
+            "visible": true
+        },
+        "emm9l36eyxshk3fy": {
+            "id": "emm9l36eyxshk3fy",
+            "type": "timer",
+            "content": {
+                "intervalMs": "20",
+                "isActive": ""
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "4u886uey28tfgovu",
+            "handlers": {
+                "ss-tick": "process_ipcam1_frame"
+            },
+            "visible": true
+        },
+        "rv0ez621w758jmve": {
+            "id": "rv0ez621w758jmve",
+            "type": "timer",
+            "content": {
+                "intervalMs": "20"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "ne620xnw9odnnz3d",
+            "handlers": {
+                "ss-tick": "process_ipcam2_frame"
+            },
+            "visible": true
+        },
+        "6fz8at5lm00bot2l": {
+            "id": "6fz8at5lm00bot2l",
+            "type": "timer",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "nlhzwpxp62eook1b",
+            "handlers": {
+                "ss-tick": "process_ipcam3_frame"
+            },
+            "visible": true
+        },
+        "x8ta3jbfc2wvj90r": {
+            "id": "x8ta3jbfc2wvj90r",
+            "type": "timer",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "zqtml80x6p6k0hnd",
+            "handlers": {
+                "ss-tick": "process_ipcam4_frame"
+            },
+            "visible": true
+        },
+        "ud5ymgag0pjcar8m": {
+            "id": "ud5ymgag0pjcar8m",
+            "type": "timer",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "x8xnhfls9tvclj1o",
+            "handlers": {
+                "ss-tick": "process_ipcam5_frame"
+            },
+            "visible": true
+        },
+        "gc4uye9ivj9twqoo": {
+            "id": "gc4uye9ivj9twqoo",
+            "type": "timer",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "9fkhuhngo3stuvvu",
+            "handlers": {
+                "ss-tick": "process_ipcam6_frame"
+            },
+            "visible": true
+        },
+        "x31ce0nryh7tt7bm": {
+            "id": "x31ce0nryh7tt7bm",
+            "type": "tab",
+            "content": {
+                "name": "Search"
+            },
+            "isCodeManaged": false,
+            "position": 4,
+            "parentId": "tvil2fqvagliblqv",
+            "handlers": {
+                "click": "update_tracking_df"
+            },
+            "visible": true
+        },
+        "gwznmj1nnczorcqr": {
+            "id": "gwznmj1nnczorcqr",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "x31ce0nryh7tt7bm",
+            "handlers": {},
+            "visible": true
+        },
+        "i2m7sgn5j3sgb4b0": {
+            "id": "i2m7sgn5j3sgb4b0",
+            "type": "column",
+            "content": {
+                "width": "1",
+                "isSticky": "no"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "gwznmj1nnczorcqr",
+            "handlers": {},
+            "visible": true
+        },
+        "3i6y7t0jthphnang": {
+            "id": "3i6y7t0jthphnang",
+            "type": "dataframe",
+            "content": {
+                "showIndex": "no",
+                "enableSearch": "yes",
+                "enableDownload": "yes",
+                "displayRowCount": "15",
+                "wrapText": "no",
+                "dataframeHeaderRowBackgroundColor": "#eeb6b6",
+                "dataframe": "@{tracking_df}"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "i2m7sgn5j3sgb4b0",
+            "handlers": {},
+            "visible": true
+        },
+        "pvkddn9hznznk2vo": {
+            "id": "pvkddn9hznznk2vo",
+            "type": "button",
+            "content": {
+                "text": "Sync data",
+                "icon": "loop-right-line",
+                "buttonColor": "#D00846",
+                "buttonTextColor": "#ffffff"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "i2m7sgn5j3sgb4b0",
+            "handlers": {
+                "ss-click": "update_tracking_df"
+            },
+            "visible": true
+        },
+        "jn3damvkvn8kr36f": {
+            "id": "jn3damvkvn8kr36f",
+            "type": "image",
+            "parentId": "ivx8uwakdseg6h6x",
+            "content": {
+                "src": "@{video_playback}",
+                "caption": ""
+            },
+            "handlers": {},
+            "position": 0,
+            "visible": true
+        }
+    }
+}

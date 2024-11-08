@@ -1,0 +1,1 @@
+{"api_endpoint": "http://localhost:5000", "yolo_model": "yolov8n", "objects": ["bicycle", "car", "motorbike", "bus", "train", "truck", "boat", "traffic light", "fire hydrant", "stop sign", "aeroplane", "parking meter", "bench", "bird", "cat", "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie", "suitcase"]}
